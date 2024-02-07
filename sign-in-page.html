@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In/Sign Up - Esca•late Fitness</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0; 
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            box-sizing: border-box;
+            background: url(Images/gymfloor.jpg) no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        header {
+            background-color:#3F3A36;
+            color: #fff;
+            padding: 15px 0;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            max-width: 100px;
+        }
+
+        .navbar {
+            background-color:#3F3A36;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: #fff;
+        }
+
+        .navbar-dark .navbar-toggler-icon {
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .jumbotron {
+            background-color: #3F3A36;
+            color: #fff;
+            padding: 100px 0;
+        }
+
+        .image-container {
+            background-color: #3F3A36;
+            padding: 20px;
+        }
+
+
+        .signin-container {
+            background-color: #3F3A36;
+            max-width: 1200px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            color: #fff;
+        }
+
+        .signin-container h2 {
+            max-width: 1200px;
+            margin: 20px auto;
+            color: #ffffff;
+        }
+
+        .signin-form,
+        .form-group {
+            max-width: 1200px;
+            margin: 20px auto;
+            color: #fff;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #f4ebeb;
+            border-radius: 4px;
+        }
+
+        .signin-button,
+        .need-help-button,
+        .newtoamazon-button,
+        .createyouramazon-button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .signin-button {
+            color: #3F3A36;
+            background-color: #ffffff;
+        }
+
+        .signin-button:hover {
+            color: #3F3A36;
+            background-color: #ffffff;
+        }
+
+        .extra-button button,
+        .need-help-button {
+            background-color: #fff;
+            color:#3F3A36;
+        }
+
+        footer {
+            background-color: #3F3A36;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>ESCA•LATE FITNESS</h1>
+            <img src="Images/EscalateLogo.png" alt="Esca•late Fitness Logo" class="logo">
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">HOME</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SIGN IN | SIGN UP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CLASSES | SOLO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">YOGA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="jumbotron">
+                    <h2>Ready to Join?</h2>
+                    <p>Experience it all with ESCA•LATE FITNESS</p>
+                    <p>World Class Locations</p>
+                    <p>Private Gym Sessions</p>
+                    <p>Pilates & More</p>
+                </div>
+            </div>
+            <div class="col-md-6 image-container">
+                <img src="Images/swimming.jpg" alt="Your Image" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    
+    
+    
+
+    <div class="signin-container">
+        <h2>Sign In or Create an Account</h2>
+
+        <form class="signin-form">
+            <div class="form-group">
+                <label for="username">Email or Phone Associated with Account:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="forgot-password">Forgot password</label>
+            </div>
+
+            <button type="submit" class="signin-button">Continue</button>
+
+            <button type="submit" class="need-help-button">Create an Account!</button>
+        </form>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>ESCA•LATE FITNESS &copy; 2024</p>
+        </div>
+        <div>
+            <i class="fab fa-facebook-square footer-icons"></i>
+            <i class="fab fa-twitter-square footer-icons"></i>
+            <i class="fab fa-instagram-square footer-icons"></i>
+            <i class="fab fa-linkedin footer-icons"></i>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

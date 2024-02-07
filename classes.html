@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes - ESCA•LATE FITNESS</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #000000;
+            color: #fff;
+            padding: 15px 0;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            max-width: 100px;
+        }
+
+        .navbar {
+            background-color: #000000;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: #ffffff;
+        }
+
+        .navbar-dark .navbar-toggler-icon {
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .jumbotron {
+            background-color: #000000;
+            color: #fff;
+            padding: 100px 0;
+        }
+
+        .carousel-inner {
+            background-color: #ffffff; /* Set background color to match the page */
+            height: 100vh;
+        }
+
+        .carousel-item {
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            border: 5px solid #000000; /* Add border styling */
+            border-radius: 10px;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .carousel-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            border: 2px solid #fff; /* Add border styling */
+            padding: 20px; /* Add padding for better visibility */
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background for better contrast */
+        }
+
+
+
+        footer {
+            background-color: #000000;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>ESCA•LATE FITNESS</h1>
+            <img src="Images/EscalateLogo.png" alt="Esca•late Fitness Logo" class="logo">
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">HOME</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SIGN IN | SIGN UP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CLASSES | SOLO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">YOGA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="imageCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Images/class1.jpg" alt="Image 1">
+                    <div class="carousel-text">
+                        <h3>Weight Lifting Class</h3>
+                        <p>Experience and learn everything our world class trainers have prepared for you.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/class2.jpg" alt="Image 2">
+                    <div class="carousel-text">
+                        <h3>Solo Access</h3>
+                        <p>Block out a time for you, and only you, to have the entire gym. Bring a guest, film a music video, your dance team, or your personal trainer!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Images/class3.jpg" alt="Image 3">
+                    <div class="carousel-text">
+                        <h3>After all, you, are the star of this show.</h3>
+                        <p>Welcome to ESCA•LATED part of your fitness journey.</p>
+                    </div>
+                </div>
+                <!-- Add more carousel items with different images -->
+            </div>
+            <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>ESCA•LATE FITNESS &copy; 2024</p>
+        </div>
+        <div>
+            <i class="fab fa-facebook-square footer-icons"></i>
+            <i class="fab fa-twitter-square footer-icons"></i>
+            <i class="fab fa-instagram-square footer-icons"></i>
+            <i class="fab fa-linkedin footer-icons"></i>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
